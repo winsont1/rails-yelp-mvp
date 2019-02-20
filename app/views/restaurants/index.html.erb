@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Restaurants index</h1>
+  <ul>
+    <%@restaurants.each do |restaurant| %>
+      <div class="card">
+        <li>
+          <%= restaurant.name %>
+        </li>
+        <p> - <%= restaurant.address %></p>
+      </div>
+    <% end %>
+  </ul>
+</div>
